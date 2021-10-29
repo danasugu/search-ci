@@ -11,7 +11,7 @@
    <br />
    <br />
    <br />
-   <h2 align="center">Live Data Search in Codeigniter using Ajax JQuery</h2><br />
+   <h2 align="center">contacts with search</h2><br />
    <div class="form-group">
     <div class="input-group">
      <span class="input-group-addon">Search</span>
