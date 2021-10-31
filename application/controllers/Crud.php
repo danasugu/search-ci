@@ -7,7 +7,7 @@ class Crud extends CI_Controller
 		$this->load->database();/* load database libray manually */
 		$this->load->model('Crud_model');/* load Model */
 	}
-	public function index(){
+	public function index(){ 
 		$data['usersData'] = $this->Crud_model->getUserDetails();
 		$this->load->view('users_view',$data);
 	}
