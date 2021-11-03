@@ -33,9 +33,9 @@ class Excel_export extends CI_Controller {
   $excel_row = 2;
 
 
-  foreach($employee_data as $row)
+  foreach($contact_data as $row)
   {
-   $object->getActiveSheet()->setCellValueByColumnAndRow(0, $excel_row, $row->ContactName.);
+   $object->getActiveSheet()->setCellValueByColumnAndRow(0, $excel_row, $row->ContactName);
    $object->getActiveSheet()->setCellValueByColumnAndRow(1, $excel_row, $row->Address);
    $object->getActiveSheet()->setCellValueByColumnAndRow(2, $excel_row, $row->Email);
    $object->getActiveSheet()->setCellValueByColumnAndRow(3, $excel_row, $row->ProjectName);
