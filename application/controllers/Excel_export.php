@@ -6,7 +6,7 @@ class Excel_export extends CI_Controller {
  function index()
  {
   $this->load->model("excel_export_model");
-  $data["employee_data"] = $this->excel_export_model->fetch_data();
+  $data["contact_data"] = $this->excel_export_model->fetch_data();
   $this->load->view("excel_export_view", $data);
  }
 
@@ -28,7 +28,7 @@ class Excel_export extends CI_Controller {
    $column++;
   }
 
-  $employee_data = $this->excel_export_model->fetch_data();
+  $contact_data = $this->excel_export_model->fetch_data();
 
   $excel_row = 2;
 
@@ -47,7 +47,7 @@ class Excel_export extends CI_Controller {
 
   $object_writer = PHPExcel_IOFactory::createWriter($object, 'Excel5');
   header('Content-Type: application/vnd.ms-excel');
-  header('Content-Disposition: attachment;filename="Employee Data.xls"');
+  header('Content-Disposition: attachment;filename="Contact Data.xls"');
   $object_writer->save('php://output');
  }
 
