@@ -2,6 +2,8 @@
 
 /**    PHPExcel root directory */
 if (!defined('PHPEXCEL_ROOT')) {
+
+    require_once('PHPExcel/IOFactory.php');
     /**
      * @ignore
      */
